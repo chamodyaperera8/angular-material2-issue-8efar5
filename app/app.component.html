@@ -1,0 +1,5 @@
+<div *ngFor="let attribute of agent.attributes; let i=index">
+  <mat-slide-toggle [checked]="agent.attributes[i].value === 'true' ? true : false"
+  (change)="setValue( i, $event )" 
+>{{agent.attributes[0].value}}</mat-slide-toggle>
+</div>
